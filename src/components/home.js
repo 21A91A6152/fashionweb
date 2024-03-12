@@ -49,6 +49,11 @@ function Home(){
                   </nav>
                 </div>
             </div>
+            <div className="row">
+                <div className="col-12">
+                 <img src={img} style={{width:"100%",height:"600px"}}></img>
+                </div>
+            </div>
   
             <div className="row">
                 <div className="col-12">
