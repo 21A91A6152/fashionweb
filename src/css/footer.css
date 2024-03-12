@@ -4,9 +4,10 @@ footer{
    
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
-    padding: 10px 0 30px;
+    margin: 0px;
+ 
     font-size: 13px;
-    line-height: 20px;
+   
 }
 
 .col:nth-child(2) , .col:nth-child(3){

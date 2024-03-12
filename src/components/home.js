@@ -1,10 +1,12 @@
 import logo from '../images/Logo Files/For Web/png/wl.png';
 import img from '../images/mainlogo.jpg';
 import "../css/footer.css";
+import Aboutus from './Aboutus';
+import Footer from './footer';
  
 function Home(){
     return(
-        <div className="container-fluid">
+        <div className="container-fluid" style={{backgroundColor:"#e8f9fd"}}>
             <div className="row">
                 <div className="col-12 bg-dark">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,7 +51,7 @@ function Home(){
                   </nav>
                 </div>
             </div>
-            <div className="row">
+            <div className="row ">
                 <div className="col-12">
                  <img src={img} style={{width:"100%",height:"600px"}}></img>
                 </div>
@@ -60,28 +62,33 @@ function Home(){
                 <h1>categories</h1>
                 </div>
             </div>
-            <div className="row my-2 p-4" style={{backgroundColor:"#e8f9fd"}}>
-                <div className='col-3'>
+            <div className='row bg-light' >
+              <div className='col-12 px-5 py-5'>
+                <Aboutus />
+              </div>
+            </div>
+            <div className="row my-2 p-4 bg-light"  >
+                <div className='col-md-3 col-sm-12 mt-5' >
                   <div className='card p-3 '>
                       <h6>Design work</h6>
-                      <p>
-Kanyamani Fashions boasts a comprehensive collection of the latest designs, offering both computerized and manual customization options to fulfill diverse design preferences and needs. </p>
+                     
+                      <p>   Kanyamani Fashions boasts a comprehensive collection of the latest designs, offering both computerized and manual customization options to fulfill diverse design preferences and needs. </p>
                   </div>
                    
                 </div>
-                <div className='col-3'>
+                <div className='col-md-3 col-sm-12 mt-5'>
                   <div className='card p-3'>
                       <h6>Tailor Services</h6>
                       <p>We provide tailor services who have lot of experince and have creative ideas for new designs </p>
                   </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-md-3 col-sm-12 mt-5'>
                   <div className='card p-3'>
                       <h6>Tailor Services</h6>
                       <p>We provide tailor services who have lot of experince and have creative ideas for new designs </p>
                   </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-md-3 col-sm-12 mt-5'>
                   <div className='card p-3'>
                       <h6>Tailor Services</h6>
                       <p>We provide tailor services who have lot of experince and have creative ideas for new designs </p>
@@ -108,54 +115,11 @@ Kanyamani Fashions boasts a comprehensive collection of the latest designs, offe
                 
              </div>
              
-            <footer>
-            <div class="row">
-                <div class="col-md-3 col-sm-12 px-5 mt-5">
-                    <img src={logo} class="logo" />
-                    <p>Kanyamani Fashions offers a diverse range of women's designer wear, fabrics, and accessories, specializing in intricate embroidery and designer sarees. Their extensive selection includes silk, cotton, and polyester fabrics, along with a variety of threads and embellishments for tailored creations.</p>
-                </div>
-                <div class="col-md-3 col-sm-12 px-5 mt-5"> 
-                    <h3><u > Address :</u> </h3>
-                    <p>Ground Floor, Akhil Complex, H.No 13-0/1 ,
-                     Beeramguda Main Rd, near Monday Market, beside SLV Ayyangar Bakery, Shirdi Sai Colony </p>
-                    <p> Hyderabad, Telangana 502032</p>
-                    <span>Email : kanyamanifashions@gmail.com</span><br/>
-                    <span>Phone no : +91 9951924041</span>
-                     
-                </div>
-                <div class="col-md-2 col-sm-12 px-5 mt-5">
-                    <h3><u> Links :</u>  </h3>
-                    <ul>
-                         <li><a href="">Home</a></li>
-                         <li><a href="">Services</a></li>
-                         <li><a href="">About us</a></li>
-                         <li><a href="">Features</a></li>
-                         <li><a href="">contact</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-12 px-5 mt-5">
-                    <h3><u> Email :</u> </h3>
-                    <form>
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" placeholder="Enter Your E-Mail Id" required />
-                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                    </form>
-                    <div class="social-icons">
-                        <i class="fa-brands fa-facebook"></i> 
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            <p class="copyright">website@2024 - all rights reserved</p>
-        </footer>
+             
           
-          {/* <div className='row'>
-            <Footer/>
-          </div> */}
+              <div className='row'>
+                <Footer/>
+              </div>
                 </div>
 
            

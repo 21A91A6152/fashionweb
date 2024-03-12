@@ -4,22 +4,21 @@ function Footer(){
     return (<div>
         <footer>
             <div class="row">
-                <div class="col">
-                    <img src={logo} class="logo"/>
-                    <p>visit website specifically : discourse intended to give a mental image of something experienced
-                        beautiful beyond description
-                        gave an accurate description of what he saw</p>
+                <div class="col-md-3 col-sm-12 px-5 mt-5">
+                    <img src={logo} class="logo" />
+                    <p>Kanyamani Fashions offers a diverse range of women's designer wear, fabrics, and accessories, specializing in intricate embroidery and designer sarees. Their extensive selection includes silk, cotton, and polyester fabrics, along with a variety of threads and embellishments for tailored creations.</p>
                 </div>
-                <div class="col">
-                    <h3>Office <div class="underline"><span></span></div></h3>
-                    <p>ipl road</p>
-                    <p>hyd</p>
-                    <p> telangana</p>
-                    <p class="email-id">kanmani@gmail.com</p>
-                    <h4>9999999999</h4>
+                <div class="col-md-3 col-sm-12 px-5 mt-5"> 
+                    <h3><u > Address :</u> </h3>
+                    <p>Ground Floor, Akhil Complex, H.No 13-0/1 ,
+                     Beeramguda Main Rd, near Monday Market, beside SLV Ayyangar Bakery, Shirdi Sai Colony </p>
+                    <p> Hyderabad, Telangana 502032</p>
+                    <span>Email : kanyamanifashions@gmail.com</span><br/>
+                    <span>Phone no : +91 9951924041</span>
+                     
                 </div>
-                <div class="col">
-                    <h3>Links <div class="underline"><span></span></div></h3>
+                <div class="col-md-2 col-sm-12 px-5 mt-5">
+                    <h3><u> Links :</u>  </h3>
                     <ul>
                          <li><a href="">Home</a></li>
                          <li><a href="">Services</a></li>
@@ -29,8 +28,8 @@ function Footer(){
 
                     </ul>
                 </div>
-                <div class="col">
-                    <h3>Email <div class="underline"><span></span></div></h3>
+                <div class="col-md-3 col-sm-12 px-5 mt-5">
+                    <h3><u> Email :</u> </h3>
                     <form>
                         <i class="fa-regular fa-envelope"></i>
                         <input type="email" placeholder="Enter Your E-Mail Id" required />
@@ -47,6 +46,7 @@ function Footer(){
             <hr/>
             <p class="copyright">website@2024 - all rights reserved</p>
         </footer>
-    </div>)
+    </div>
+    )
 }
 export default Footer
