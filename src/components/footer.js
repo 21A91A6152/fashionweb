@@ -5,7 +5,7 @@ function Footer(){
         <footer>
             <div class="row">
                 <div class="col-md-3 col-sm-12 px-5 mt-5">
-                    <img src={logo} class="logo" />
+                    <img src={logo} class="logo" alt="logo" />
                     <p>Kanyamani Fashions offers a diverse range of women's designer wear, fabrics, and accessories, specializing in intricate embroidery and designer sarees. Their extensive selection includes silk, cotton, and polyester fabrics, along with a variety of threads and embellishments for tailored creations.</p>
                 </div>
                 <div class="col-md-3 col-sm-12 px-5 mt-5"> 
@@ -20,11 +20,11 @@ function Footer(){
                 <div class="col-md-2 col-sm-12 px-5 mt-5">
                     <h3><u> Links :</u>  </h3>
                     <ul>
-                         <li><a href="">Home</a></li>
-                         <li><a href="">Services</a></li>
-                         <li><a href="">About us</a></li>
-                         <li><a href="">Features</a></li>
-                         <li><a href="">contact</a></li>
+                         <li><a href="#home">Home</a></li>
+                         <li><a href="#services">Services</a></li>
+                         <li><a href="#aboutus">About us</a></li>
+                         <li><a href="#categories">Features</a></li>
+                         <li><a href="#contact">contact</a></li>
 
                     </ul>
                 </div>
@@ -44,7 +44,7 @@ function Footer(){
                 </div>
             </div>
             <hr/>
-            <p class="copyright">website@2024 - all rights reserved</p>
+            <p class="copyright">kanyamanifashions@2024 - all rights reserved</p>
         </footer>
     </div>
     )
