@@ -7,12 +7,13 @@ import { Link } from 'react-router-dom';
 import kuchu from '../images/kuchu.jpg';
 import fabrics from '../images/fabrics.jpg';
 import threads from '../images/threads.jpg';
+import wa from '../images/whatsapp.png';
  
 function Home(){
  
     return(
-        <div className="container-fluid" style={{backgroundColor:"#feb300"}}>
-            <div className="row " id='home'>
+        <div className="container-fluid" style={{backgroundColor:"#F8E5E5 ",margin:"0px",padding:"0px"}}>
+            <div className="row " id='home' style={{margin:'0px' ,padding:'0px'}}>
                 <div className="col-12 bg-dark">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
@@ -61,7 +62,7 @@ function Home(){
                   </nav>
                 </div>
             </div>
-            <div className="row ">
+            <div className="row " style={{margin:'0px' ,padding:'0px'}}>
                 <div className="col-12">
                  <img src={img}  alt='logo' style={{width:"100%",height:"600px"}}></img>
                 </div>
@@ -71,12 +72,12 @@ function Home(){
             {/* categories */}
 
 
-            <div className="row my-3" id='categories'>
-              <div className='col-md-1'></div>
-              <div className='col-md-10 col-sm-12'>
+            <div className="row my-3" id='categories' style={{margin:'0px',padding:'0px'}}>
+              <div className='col-md-1' style={{margin:'0px',padding:'0px'}}></div>
+              <div className='col-md-10 col-sm-12' style={{margin:'0px',padding:'0px'}}>
                 <div className="card">
                   <h1 className='text-danger text-center'>Categories</h1>
-                  <div className='row'>
+                  <div className='row' >
 
                     <div className='col-md-3 col-sm-12'>
                       <div className='card'>
@@ -100,25 +101,31 @@ function Home(){
                   </div>
                 </div>
               </div>
-              <div className='col-md-1'></div>
+              <div className='col-md-1' style={{margin:'0px',padding:'0px'}}></div>
             </div>
 
             {/* ABOUT US */}
 
 
-            <div className='row bg-light' id='aboutus' style={{backgroundColor:"#feb300"}} >
-              <div className='col-md-1' style={{backgroundColor:"#feb300"}}></div>
-              <div className='col-md-10 col-sm-12 py-2' style={{backgroundColor:"#feb300"}}>
+            <div className='row bg-light' id='aboutus' style={{backgroundColor:"#F8E5E5 ",margin:'0px' ,padding:'0px'}} >
+              <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}></div>
+              <div className='col-md-10 col-sm-12 py-2' style={{backgroundColor:"#F8E5E5 "}}>
                 <Aboutus />
               </div>
-              <div className='col-md-1' style={{backgroundColor:"#feb300"}}  ></div>
+              <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}  ></div>
+            </div>
+
+            {/* whatsapp */}
+             
+            <div className='row' style={{margin:"0px",padding:"0px"}}>
+               <a href='https://wa.me/9951924041'><img src={wa} alt='logo' style={{height:'75px',width:'75px',position:"fixed",bottom:'20px' ,right:'10px',zIndex:"1"}}></img></a>
             </div>
 
             {/* SERVICES */}
 
 
-            <div className="row my-2 p-4  " id='services' style={{backgroundColor:"#feb300"}} >
-              <h1>Services</h1>
+            <div className="row my-2 p-4  " id='services' style={{backgroundColor:"#F8E5E5",margin:'0px' ,padding:'0px' }} >
+              <h1 className='text-dark fw-bold text-center'>Services</h1>
                 <div className='col-md-3 col-sm-12 mt-5 seer'  >
                   <div className='card  services p-3 ' >
                       <h4 className="text-center fw-bold">Design work</h4>
@@ -148,36 +155,36 @@ function Home(){
 
             {/* STATASTICS */}
 
-             <div className='row' style={{backgroundColor:"black"}}>
-                <div className='col-md-4 col-sm-12  px-5 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
-                <h5>Happy clients</h5>
+             <div className='row' style={{backgroundColor:"#c39ea0",borderRadius:"30px" ,margin:'0px' ,padding:'0px'}}>
+                <div className='col-md-4 col-sm-12  px-3 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
+                <h5 className='pt-2'>Happy clients</h5>
                 <span className='fs-1'><i class="fa-solid fa-users"></i></span>
                 <p className='py-3'>2000</p></div></div>
 
-                <div className='col-md-4 col-sm-12   px-5 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
-                <h5>Orders Delivered</h5>
+                <div className='col-md-4 col-sm-12   px-3 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
+                <h5 className='pt-2'>Orders Delivered</h5>
                 <span className='fs-1'><i class="fa-solid fa-truck"></i></span>
                 <p className='py-3'>500+</p></div></div>
 
-                <div className='col-md-4 col-sm-12   px-5 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
-                <h5>Ratings</h5>
+                <div className='col-md-4 col-sm-12   px-3  py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
+                <h5 className='pt-2'>Ratings</h5>
                 <span className='fs-1'><i class="fa-solid fa-face-smile"></i></span>
                 <p className='py-3'>4.5 <i class="fa-solid fa-star"></i></p></div></div>
 
-
+              </div>
               {/* REVIEWS */}
                 
-             </div>
-             <div className='row'>
+              
+             <div className='row mt-3' style={{margin:"0px",padding:"0px"}}>
                 <div className='col-12'>
-                  <h1> reviews</h1>
+                  <h1 className='text-dark fw-bold text-center' > Reviews</h1>
                 </div>
 
              </div>
              
              {/* FOOTER */}
           
-              <div className='row' id='contactus'>
+              <div className='row' id='contactus' style={{margin:"0px",padding:"0px"}}>
                 <Footer/>
               </div>
                 </div>

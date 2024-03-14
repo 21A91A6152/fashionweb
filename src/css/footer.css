@@ -1,12 +1,17 @@
- 
+.row{
+    margin:"0px";
+    padding:"0px";
+}
  
 footer{
    
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    background: #c39ea0;
     color: #fff;
     margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
  
-    font-size: 13px;
+    font-size: 15px;
    
 }
 
@@ -33,12 +38,12 @@ footer{
 
 ul li{
      list-style: none;
-     margin-bottom: 12px;
+      
 }
 
 ul li a{
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 form{
@@ -58,7 +63,7 @@ form .fa-regular{
 form input{
     width: 100%;
     background: transparent;
-    color: #ccc;
+    color: #000;
     border: 0;
     outline: none;
 }
@@ -104,6 +109,6 @@ hr {
     border-radius: 25px;
     
     height: 250px;
-    box-shadow: 10px 10px 10px -41px rgb(239, 236, 238), 10px -10px 26px -5px rgb(244, 248, 249),10px 10px 10px -41px rgb(153, 160, 146) , 0 -10px 26px -5px rgb(204, 240, 233)
+    box-shadow: 10px 10px 10px -41px rgb(255, 5, 172), 10px -10px 26px -5px rgb(195, 158, 160),10px 10px 10px -41px rgb(195, 158, 160) , 0 -10px 26px -5px rgb(195, 158, 160)
 }
   
