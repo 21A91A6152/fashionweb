@@ -7,45 +7,45 @@ function Map(){
         <div className="container-fluid" style={{backgroundColor:"#e8f9fd"}}>
             <div className="row " id='home'>
                 <div className="col-12 bg-dark">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
                     <Link to={`/`} ><img src={logo} alt='logo' style={{height:"50px" ,width:"190px"}}></img></Link>
-                      <button class="navbar-toggler" style={{float:'right'}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <button className="navbar-toggler" style={{float:'right'}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                                <Link to={`/`} class="nav-link fs-5 px-2  " >Home </Link>
+                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li className="nav-item">
+                                <Link to={`/`} className="nav-link fs-5 px-2  " >Home </Link>
                           
                           </li>
                           
 
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#categories">Action</a></li>
-                              <li><a class="dropdown-item" href="#categories">Another action</a></li>
+                            <ul className="dropdown-menu">
+                              <li><a className="dropdown-item" href="#categories">Action</a></li>
+                              <li><a className="dropdown-item" href="#categories">Another action</a></li>
                               <li>
-                                <hr class="dropdown-divider"/>
+                                <hr className="dropdown-divider"/>
                               </li>
-                              <li><a class="dropdown-item" href="#categories">another</a></li>
+                              <li><a className="dropdown-item" href="#categories">another</a></li>
                             </ul>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link   fs-5 px-2"   href="#aboutus">About us</a>
+                          <li className="nav-item">
+                            <a className="nav-link   fs-5 px-2"   href="#aboutus">About us</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5 px-2" href='#services'>Services</a>
+                          <li className="nav-item">
+                            <a className="nav-link fs-5 px-2" href='#services'>Services</a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                           <Link to={`/map`}
-                                            class="nav-link fs-5 px-2  " >MAP location </Link>
+                                            className="nav-link fs-5 px-2  " >MAP location </Link>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5 px-2" href="#contactus">contact us</a>
+                          <li className="nav-item">
+                            <a className="nav-link fs-5 px-2" href="#contactus">contact us</a>
                           </li>
                         </ul>
                       

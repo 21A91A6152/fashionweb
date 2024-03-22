@@ -5,8 +5,8 @@ import Aboutus from './Aboutus';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
 import kuchu from '../images/kuchu.jpg';
-import fabrics from '../images/fabrics.jpg';
-import threads from '../images/threads.jpg';
+import fabrics from '../images/fabrics.jpeg';
+import threads from '../images/threads.jpeg';
 import wa from '../images/whatsapp.png';
  
 function Home(){
@@ -15,45 +15,45 @@ function Home(){
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5 ",margin:"0px",padding:"0px"}}>
             <div className="row " id='home' style={{margin:'0px' ,padding:'0px'}}>
                 <div className="col-12 bg-dark">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div className="container-fluid">
                     <Link to={`/`} ><img src={logo} alt='logo' style={{height:"50px" ,width:"190px"}}></img></Link>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                       </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
+                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li className="nav-item">
                           <Link to={`/`}
-                                            class="nav-link fs-5 px-2  " >Home </Link>
+                                            className="nav-link fs-5 px-2  " >Home </Link>
                           </li>
                           
 
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#categories">Action</a></li>
-                              <li><a class="dropdown-item" href="#categories">Another action</a></li>
+                            <ul className="dropdown-menu">
+                              <li><a className="dropdown-item" href="#categories">Action</a></li>
+                              <li><a className="dropdown-item" href="#categories">Another action</a></li>
                               <li>
-                                <hr class="dropdown-divider"/>
+                                <hr className="dropdown-divider"/>
                               </li>
-                              <li><a class="dropdown-item" href="#categories">another</a></li>
+                              <li><a className="dropdown-item" href="#categories">another</a></li>
                             </ul>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link   fs-5 px-2"   href="#aboutus">About us</a>
+                          <li className="nav-item">
+                            <a className="nav-link   fs-5 px-2"   href="#aboutus">About us</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5 px-2" href='#services'>Services</a>
+                          <li className="nav-item">
+                            <a className="nav-link fs-5 px-2" href='#services'>Services</a>
                           </li>
-                          <li class="nav-item">
+                          <li className="nav-item">
                           <Link to={`/map`}
-                                            class="nav-link fs-5 px-2  " >MAP location </Link>
+                                            className="nav-link fs-5 px-2  " >MAP location </Link>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link fs-5 px-2" href="#contactus">contact us</a>
+                          <li className="nav-item">
+                            <a className="nav-link fs-5 px-2" href="#contactus">contact us</a>
                           </li>
                         </ul>
                       
@@ -72,31 +72,45 @@ function Home(){
             {/* categories */}
 
 
-            <div className="row my-3" id='categories' style={{margin:'0px',padding:'0px'}}>
+            <div className="row my-3" id='categories'  style={{backgroundColor:"#F8E5E5 ",margin:'0px' ,padding:'0px'}}>
               <div className='col-md-1' style={{margin:'0px',padding:'0px'}}></div>
-              <div className='col-md-10 col-sm-12' style={{margin:'0px',padding:'0px'}}>
-                <div className="card">
-                  <h1 className='text-danger text-center'>Categories</h1>
-                  <div className='row' >
-
-                    <div className='col-md-3 col-sm-12'>
-                      <div className='card'>
-                        <div className='card-header'><img src={kuchu} alt="logo" style={{height:'100px'}}></img></div>
+              <div className='col-md-10 col-sm-12' style={{backgroundColor:"#F8E5E5 ",margin:'0px',padding:'0px'}}>
+                <div className="" style={{backgroundColor:"#F8E5E5 "}}>
+                  <h1 className='text-dark text-center fw-bolder'>Categories</h1>
+                  <div className='row' style={{margin:'0px',padding:'0px'}}>
+                    <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
+                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                        <div className='card-headder text-center mt-3'>
+                          <img src={fabrics} alt='fabrics' style={{height:'200px',width:"300px"}}></img>
+                           </div>
+                          <div className='card-body'>
+                             <h3 className='text-center'>Fabrics</h3>
+                          </div>
                       </div>
-                    </div>
 
-                    <div className='col-md-3 col-sm-12'>
-                      <div className='card'>
-                        <div className='card-header'><img src={fabrics} alt="logo" style={{height:'100px'}}></img></div>
+                    </div>
+                    <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
+                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                        <div className='card-headder text-center mt-3'>
+                          <img src={kuchu} alt='kuchu'style={{height:'200px',width:"300px"}}></img>
+                           </div>
+                          <div className='card-body'>
+                             <h3 className='text-center'>Kuchu</h3>
+                          </div>
                       </div>
-                    </div>
 
-                    <div className='col-md-3 col-sm-12'>
-                      <div className='card'>
-                        <div className='card-header'><img src={threads} alt="logo" style={{height:'100px',width:"100%"}}></img></div>
+                    </div>
+                    <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px',}} >
+                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                        <div className='card-headder text-center mt-3'>
+                          <img src={threads} alt='threads' style={{height:'200px',width:"300px"}}></img>
+                           </div>
+                          <div className='card-body'>
+                             <h3 className='text-center'>Threads</h3>
+                          </div>
                       </div>
-                    </div>
 
+                    </div>
                      
                   </div>
                 </div>
@@ -158,18 +172,18 @@ function Home(){
              <div className='row' style={{backgroundColor:"#c39ea0",borderRadius:"30px" ,margin:'0px' ,padding:'0px'}}>
                 <div className='col-md-4 col-sm-12  px-3 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
                 <h5 className='pt-2'>Happy clients</h5>
-                <span className='fs-1'><i class="fa-solid fa-users"></i></span>
+                <span className='fs-1'><i className="fa-solid fa-users"></i></span>
                 <p className='py-3'>2000</p></div></div>
 
                 <div className='col-md-4 col-sm-12   px-3 py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
                 <h5 className='pt-2'>Orders Delivered</h5>
-                <span className='fs-1'><i class="fa-solid fa-truck"></i></span>
+                <span className='fs-1'><i className="fa-solid fa-truck"></i></span>
                 <p className='py-3'>500+</p></div></div>
 
                 <div className='col-md-4 col-sm-12   px-3  py-3 my-3 text-center'> <div className='bg-light mx-5' style={{borderRadius:"25px"}}>
                 <h5 className='pt-2'>Ratings</h5>
-                <span className='fs-1'><i class="fa-solid fa-face-smile"></i></span>
-                <p className='py-3'>4.5 <i class="fa-solid fa-star"></i></p></div></div>
+                <span className='fs-1'><i className="fa-solid fa-face-smile"></i></span>
+                <p className='py-3'>4.5 <i className="fa-solid fa-star"></i></p></div></div>
 
               </div>
               {/* REVIEWS */}
