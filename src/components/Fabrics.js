@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import logo from '../images/Logo Files/For Web/png/wl.png';
+import wa from '../images/whatsapp.png';
 import Footer from './footer';
 import Aboutus from './Aboutus';
+import f1 from '../images/cottonlining.jpeg';
+import f2 from '../images/polysterlining.jpeg';
+import f3 from '../images/Rayon.jpg';
+import f4 from '../images/Net Organza.jpg';
+import f5 from '../images/Saree Fall.jpeg';
 
-function Map(){
+
+function Fabrics(){
     return(
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5"}}>
             <div className="row " id='home'>
@@ -53,21 +60,81 @@ function Map(){
                   </nav>
                 </div>
             </div>
-
-            <div className='row'>
-                <div className='col-md-6'>
-                    <h1>location</h1>
-                </div>
-                <div className='col-md-6'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.6108703239861!2d78.30181549999999!3d17.5129086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8d026c974857%3A0x8b5e28ec4bcb9330!2sKanyamani%20Fashions!5e0!3m2!1sen!2sin!4v1710311000862!5m2!1sen!2sin" width="100%" height="600" style={{border:"0px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='location'></iframe>
-                </div>
+            <div className='row text-center '>
+                 
+                    <h1 className='fw-bolder my-5'> Fabrics </h1>
+                    <div className='card col-md-3 col-sm-6' >
+                        <div className='card-header'>
+                            <img src={f1} alt=''  style={{height:'200px',width:'300px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Cotton Lining</h3>
+                            <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                       
+                    </div>
+                    <div className='card col-md-3 col-sm-6'>
+                        <div className='card-header'>
+                            <img src={f2} alt=''  style={{height:'200px',width:'300px'}}/> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Polyester Lining</h3>
+                            <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp; &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+             
+                    </div>
+                    <div className='card col-md-3 col-sm-6'>
+                        <div className='card-header'>
+                            <img src={f3} alt='' style={{height:'200px',width:'300px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Rayon</h3>
+                            <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                    </div>
+                    <div className='card col-md-3 col-sm-6'>
+                        <div className='card-header'>
+                            <img src={f4} alt='' style={{height:'200px',width:'300px'}} /> 
+                            
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Net Lining</h3>
+                            <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                        
+                    </div>
+                    <div className='card col-md-3 col-sm-6'>
+                        <div className='card-header'>
+                            <img src={f5} alt='' style={{height:'200px',width:'300px'}} /> 
+                            
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Saree Fall</h3>
+                            <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                        
+                    </div>
+                  
             </div>
+
+           
             <div className='row bg-light' id='aboutus' style={{backgroundColor:"#F8E5E5 ",margin:'0px' ,padding:'0px'}} >
               <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}></div>
               <div className='col-md-10 col-sm-12 py-2' style={{backgroundColor:"#F8E5E5 "}}>
                 <Aboutus />
               </div>
               <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}  ></div>
+            </div>
+
+            {/* whatsapp */}
+            
+            <div className='row' style={{margin:"0px",padding:"0px"}}>
+               <a href='https://wa.me/9951924041'><img src={wa} alt='logo' style={{height:'75px',width:'75px',position:"fixed",bottom:'20px' ,right:'10px',zIndex:"1"}}></img></a>
             </div>
              {/* SERVICES */}
 
@@ -126,4 +193,4 @@ function Map(){
         </div>
     )
 }
-export default Map;
+export default Fabrics;

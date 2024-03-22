@@ -34,12 +34,10 @@ function Home(){
                               categories
                             </a>
                             <ul className="dropdown-menu">
-                              <li><a className="dropdown-item" href="#categories">Action</a></li>
-                              <li><a className="dropdown-item" href="#categories">Another action</a></li>
-                              <li>
-                                <hr className="dropdown-divider"/>
-                              </li>
-                              <li><a className="dropdown-item" href="#categories">another</a></li>
+                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
+                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
+                               
                             </ul>
                           </li>
                           <li className="nav-item">
@@ -80,7 +78,7 @@ function Home(){
                   <div className='row' style={{margin:'0px',padding:'0px'}}>
                     <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
                       <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
-                        <div className='card-headder text-center mt-3'>
+                        <div className='card-header text-center mt-3'>
                           <img src={fabrics} alt='fabrics' style={{height:'200px',width:"300px"}}></img>
                            </div>
                           <div className='card-body'>
@@ -91,7 +89,7 @@ function Home(){
                     </div>
                     <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
                       <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
-                        <div className='card-headder text-center mt-3'>
+                        <div className='card-header text-center mt-3'>
                           <img src={kuchu} alt='kuchu'style={{height:'200px',width:"300px"}}></img>
                            </div>
                           <div className='card-body'>
@@ -102,7 +100,7 @@ function Home(){
                     </div>
                     <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px',}} >
                       <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
-                        <div className='card-headder text-center mt-3'>
+                        <div className='card-header text-center mt-3'>
                           <img src={threads} alt='threads' style={{height:'200px',width:"300px"}}></img>
                            </div>
                           <div className='card-body'>
@@ -149,7 +147,7 @@ function Home(){
                 </div>
                 <div className='col-md-3 col-sm-12 mt-5 seer' >
                   <div className='card services p-3'>
-                      <h4 className="text-center fw-bold">maggam work</h4>
+                      <h4 className="text-center fw-bold">Maggam work</h4>
                       <p>We have experinced workers who have lot of creative ideas with different styles and also design as per your order </p>
                   </div>
                 </div>
