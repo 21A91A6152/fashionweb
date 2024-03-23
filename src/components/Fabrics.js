@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/Logo Files/For Web/png/wl.png';
 import wa from '../images/whatsapp.png';
 import Footer from './footer';
+import '../css/card.css';
 import Aboutus from './Aboutus';
 import f1 from '../images/cottonlining.jpeg';
 import f2 from '../images/polysterlining.jpeg';
@@ -34,9 +35,9 @@ function Fabrics(){
                               categories
                             </a>
                             <ul className="dropdown-menu">
-                              <li><a className="dropdown-item" href="#categories">Fabrics</a></li>
-                              <li><a className="dropdown-item" href="#categories">Kuchu</a></li>
-                              <li><a className="dropdown-item" href="#categories">Threads,beads and laces</a></li>
+                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>
@@ -63,7 +64,7 @@ function Fabrics(){
             <div className='row text-center '>
                  
                     <h1 className='fw-bolder my-5'> Fabrics </h1>
-                    <div className='card col-md-3 col-sm-6' >
+                    <div className='card col-md-3 col-sm-6 coll'  >
                         <div className='card-header'>
                             <img src={f1} alt=''  style={{height:'200px',width:'300px'}} /> 
                         </div>
@@ -74,7 +75,7 @@ function Fabrics(){
                         </div>
                        
                     </div>
-                    <div className='card col-md-3 col-sm-6'>
+                    <div className='card col-md-3 col-sm-6 coll' >
                         <div className='card-header'>
                             <img src={f2} alt=''  style={{height:'200px',width:'300px'}}/> 
                         </div>
@@ -85,7 +86,7 @@ function Fabrics(){
                         </div>
              
                     </div>
-                    <div className='card col-md-3 col-sm-6'>
+                    <div className='card col-md-3 col-sm-6 coll'>
                         <div className='card-header'>
                             <img src={f3} alt='' style={{height:'200px',width:'300px'}} /> 
                         </div>
@@ -95,7 +96,7 @@ function Fabrics(){
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
                     </div>
-                    <div className='card col-md-3 col-sm-6'>
+                    <div className='card col-md-3 col-sm-6 coll'>
                         <div className='card-header'>
                             <img src={f4} alt='' style={{height:'200px',width:'300px'}} /> 
                             
@@ -107,7 +108,7 @@ function Fabrics(){
                         </div>
                         
                     </div>
-                    <div className='card col-md-3 col-sm-6'>
+                    <div className='card col-md-3 col-sm-6 coll'>
                         <div className='card-header'>
                             <img src={f5} alt='' style={{height:'200px',width:'300px'}} /> 
                             

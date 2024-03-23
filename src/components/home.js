@@ -1,6 +1,7 @@
 import logo from '../images/Logo Files/For Web/png/wl.png';
 import img from '../images/mainlogo.jpg';
 import "../css/footer.css";
+import "../css/card.css";
 import Aboutus from './Aboutus';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
@@ -36,7 +37,7 @@ function Home(){
                             <ul className="dropdown-menu">
                               <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
                               <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
-                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>
@@ -76,37 +77,46 @@ function Home(){
                 <div className="" style={{backgroundColor:"#F8E5E5 "}}>
                   <h1 className='text-dark text-center fw-bolder'>Categories</h1>
                   <div className='row' style={{margin:'0px',padding:'0px'}}>
-                    <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
-                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                   
+                    <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}} >
+                    <Link to={`/fabrics`}>
+                      <div className='card my-4 coll' style={{ backgroundColor: "#c39ea0", transition: 'transform 0.3s ease' }}>
                         <div className='card-header text-center mt-3'>
-                          <img src={fabrics} alt='fabrics' style={{height:'200px',width:"300px"}}></img>
-                           </div>
-                          <div className='card-body'>
-                             <h3 className='text-center'>Fabrics</h3>
-                          </div>
+                          <img src={fabrics} alt='fabrics' style={{ height: '200px', width: "300px" }}></img>
+                        </div>
+                        <div className='card-body'>
+                          <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Fabrics</h3>
+                        </div>
                       </div>
+                    </Link>
 
                     </div>
+                     
                     <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px'}}>
-                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                    <Link to={`/kuchu`}> 
+                      <div className='card my-4 coll' style={{backgroundColor:"#c39ea0"}}>
                         <div className='card-header text-center mt-3'>
                           <img src={kuchu} alt='kuchu'style={{height:'200px',width:"300px"}}></img>
                            </div>
                           <div className='card-body'>
-                             <h3 className='text-center'>Kuchu</h3>
+                             <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Kuchu</h3>
                           </div>
                       </div>
+                      </Link>
+
 
                     </div>
                     <div className='col-md-4 col-sm-12' style={{margin:'0px',padding:'10px',}} >
-                      <div className='card my-4' style={{backgroundColor:"#c39ea0"}}>
+                    <Link to={`/threads`}> 
+                      <div className='card my-4 coll' style={{backgroundColor:"#c39ea0"}}>
                         <div className='card-header text-center mt-3'>
                           <img src={threads} alt='threads' style={{height:'200px',width:"300px"}}></img>
                            </div>
                           <div className='card-body'>
-                             <h3 className='text-center'>Threads</h3>
+                             <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Threads</h3>
                           </div>
                       </div>
+                      </Link> 
 
                     </div>
                      

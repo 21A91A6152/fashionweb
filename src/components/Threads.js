@@ -11,7 +11,7 @@ import k4 from '../images/k4.jpg';
  
 
 
-function Kuchu(){
+function Threads(){
     return(
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5"}}>
             <div className="row " id='home'>
@@ -63,7 +63,7 @@ function Kuchu(){
             </div>
             <div className='row text-center '>
                  
-                    <h1 className='fw-bolder my-5'> Kuchu </h1>
+                    <h1 className='fw-bolder my-5'> Threads,beads & laces </h1>
                     <div className='card col-md-3 col-sm-6 coll' >
                         <div className='card-header'>
                             <img src={k1} alt=''  style={{height:'200px',width:'300px'}} /> 
@@ -183,4 +183,4 @@ function Kuchu(){
         </div>
     )
 }
-export default Kuchu;
+export default Threads;
