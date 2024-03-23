@@ -2,6 +2,7 @@ import logo from '../images/Logo Files/For Web/png/wl.png';
 import img from '../images/mainlogo.jpg';
 import "../css/footer.css";
 import "../css/card.css";
+ 
 import Aboutus from './Aboutus';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
@@ -82,7 +83,7 @@ function Home(){
                     <Link to={`/fabrics`}>
                       <div className='card my-4 coll' style={{ backgroundColor: "#c39ea0", transition: 'transform 0.3s ease' }}>
                         <div className='card-header text-center mt-3'>
-                          <img src={fabrics} alt='fabrics' style={{ height: '200px', width: "300px" }}></img>
+                          <img src={fabrics} alt='fabrics' style={{ height: '200px', width: "280px" }}></img>
                         </div>
                         <div className='card-body'>
                           <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Fabrics</h3>
@@ -96,7 +97,7 @@ function Home(){
                     <Link to={`/kuchu`}> 
                       <div className='card my-4 coll' style={{backgroundColor:"#c39ea0"}}>
                         <div className='card-header text-center mt-3'>
-                          <img src={kuchu} alt='kuchu'style={{height:'200px',width:"300px"}}></img>
+                          <img src={kuchu} alt='kuchu'style={{height:'200px',width:"280px"}}></img>
                            </div>
                           <div className='card-body'>
                              <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Kuchu</h3>
@@ -110,7 +111,7 @@ function Home(){
                     <Link to={`/threads`}> 
                       <div className='card my-4 coll' style={{backgroundColor:"#c39ea0"}}>
                         <div className='card-header text-center mt-3'>
-                          <img src={threads} alt='threads' style={{height:'200px',width:"300px"}}></img>
+                          <img src={threads} alt='threads' style={{height:'200px',width:"280px"}}></img>
                            </div>
                           <div className='card-body'>
                              <h3 className='text-center text-dark' style={{textDecoration:"none"}}>Threads</h3>
@@ -195,18 +196,108 @@ function Home(){
 
               </div>
               {/* REVIEWS */}
+              
+                 
+            
                 
               
              <div className='row mt-3' style={{margin:"0px",padding:"0px"}}>
-                <div className='col-12'>
+                 
                   <h1 className='text-dark fw-bold text-center' > Reviews</h1>
-                </div>
+                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="row">
+                            <div class='card col-md-6 col-sm-12'>
+                               
+                                <div class="card-header">
+                                  <div style={{float:"left"}}> 
+                                  <img src={fabrics} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                  </div>
+                                  <div style={{float:"left",paddingLeft:"30px"}}>
+                                    <h3>Jhon Doe</h3>
+                                    <h5>Rajhmundary</h5> 
+                                    <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                  </div>
+                                   
+                                </div>
+                                <div className='card-body' style={{width:"100%"}}>
+                                <p class="">"Customer service is very good fabrics quality is also good.satisfied with the work with very reasonable prices " </p>
+                                </div>
+                          
+                            </div>
+                            <div class='card col-md-6 col-sm-12'>
+                              <div class="card-header">
+                                    <div style={{float:"left"}}> 
+                                    <img src={fabrics} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                    </div>
+                                    <div style={{float:"left",paddingLeft:"30px"}}>
+                                      <h3>Jhon Doe</h3>
+                                      <h5>Rajhmundary</h5> 
+                                      <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                    </div>
+                                    
+                                  </div>
+                                  <div className='card-body' style={{width:"100%"}}>
+                                  <p class="">"wonderful boutique helping us find the perfect dress!  Top notch service, superior quality, and Would highly recommended boutique to anyone!"</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class='card col-md-6 col-sm-12'>
+                            <div class="card-header">
+                                  <div style={{float:"left"}}> 
+                                  <img src={threads} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                  </div>
+                                  <div style={{float:"left",paddingLeft:"30px"}}>
+                                    <h3>Jhon Doe</h3>
+                                    <h5>Rajhmundary</h5> 
+                                    <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                  </div>
+                                   
+                                </div>
+                                <div className='card-body' style={{width:"100%"}}>
+                                <p class="">"Good boutique for Blouse designs, Saree Ku chu, Maggam work. Good place to work."</p>
+                                </div>
+                            </div>
+                            <div class='card col-md-6 col-sm-12'>
+                            <div class="card-header">
+                                  <div style={{float:"left"}}> 
+                                  <img src={threads} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                  </div>
+                                  <div style={{float:"left",paddingLeft:"30px"}}>
+                                    <h3>Jhon Doe</h3>
+                                    <h5>Rajhmundary</h5> 
+                                    <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                  </div>
+                                   
+                                </div>
+                                <div className='card-body' style={{width:"100%"}}>
+                                <p class="">"It's very very good store for cloths material and  nice fitting too andTimely deliver and perfect fitting"</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
 
+                
              </div>
              
              {/* FOOTER */}
           
-              <div className='row' id='contactus' style={{margin:"0px",padding:"0px"}}>
+              <div className='row mt-4' id='contactus' style={{margin:"0px",padding:"0px"}}>
                 <Footer/>
               </div>
                 </div>

@@ -140,7 +140,7 @@ function Threads(){
                 </div>
                 <div className='col-md-3 col-sm-12 mt-5 seer' >
                   <div className='card services p-3'>
-                      <h4 className="text-center fw-bold">maggam work</h4>
+                      <h4 className="text-center fw-bold">Maggam work</h4>
                       <p>We have experinced workers who have lot of creative ideas with different styles and also design as per your order </p>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/Logo Files/For Web/png/wl.png';
 import Footer from './footer';
 import Aboutus from './Aboutus';
-
+import wa from '../images/whatsapp.png';
 function Map(){
     return(
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5"}}>
@@ -62,12 +62,21 @@ function Map(){
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.6108703239861!2d78.30181549999999!3d17.5129086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8d026c974857%3A0x8b5e28ec4bcb9330!2sKanyamani%20Fashions!5e0!3m2!1sen!2sin!4v1710311000862!5m2!1sen!2sin" width="100%" height="600" style={{border:"0px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='location'></iframe>
                 </div>
             </div>
+
+            {/* about us */}
+
             <div className='row bg-light' id='aboutus' style={{backgroundColor:"#F8E5E5 ",margin:'0px' ,padding:'0px'}} >
               <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}></div>
               <div className='col-md-10 col-sm-12 py-2' style={{backgroundColor:"#F8E5E5 "}}>
                 <Aboutus />
               </div>
               <div className='col-md-1' style={{backgroundColor:"#F8E5E5 "}}  ></div>
+            </div>
+
+            {/* whatsapp */}
+
+            <div className='row' style={{margin:"0px",padding:"0px"}}>
+               <a href='https://wa.me/9951924041'><img src={wa} alt='logo' style={{height:'75px',width:'75px',position:"fixed",bottom:'20px' ,right:'10px',zIndex:"1"}}></img></a>
             </div>
              {/* SERVICES */}
 
@@ -83,7 +92,7 @@ function Map(){
                 </div>
                 <div className='col-md-3 col-sm-12 mt-5 seer' >
                   <div className='card services p-3'>
-                      <h4 className="text-center fw-bold">maggam work</h4>
+                      <h4 className="text-center fw-bold">Maggam work</h4>
                       <p>We have experinced workers who have lot of creative ideas with different styles and also design as per your order </p>
                   </div>
                 </div>
