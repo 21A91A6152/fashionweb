@@ -4,6 +4,7 @@ import Footer from './footer';
 import Aboutus from './Aboutus';
 import wa from '../images/whatsapp.png';
 import banner from '../images/banner.png'
+import '../css/card.css'
 function Map(){
     return(
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5"}}>
@@ -54,9 +55,9 @@ function Map(){
                   </nav>
                 </div>
             </div>
-             <div className='row mt-2'>
-             <marquee className="text-danger">you can visit our store by using below Address and map location </marquee>
-             </div>
+             {/* <div className='row mt-2'>
+             <span className=" marquee text-danger">you can visit our store by using below Address and map location </span>
+             </div> */}
             <div className='row '>
                 <div className='col-md-6'>
                     
