@@ -116,3 +116,8 @@ hr {
     box-shadow: 10px 10px 10px -41px rgb(255, 5, 172), 10px -10px 26px -5px rgb(195, 158, 160),10px 10px 10px -41px rgb(195, 158, 160) , 0 -10px 26px -5px rgb(195, 158, 160)
 }
   
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: black;
+  }
+  

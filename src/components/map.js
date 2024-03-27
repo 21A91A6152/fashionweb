@@ -3,6 +3,7 @@ import logo from '../images/Logo Files/For Web/png/wl.png';
 import Footer from './footer';
 import Aboutus from './Aboutus';
 import wa from '../images/whatsapp.png';
+import banner from '../images/banner.png'
 function Map(){
     return(
         <div className="container-fluid" style={{backgroundColor:"#F8E5E5"}}>
@@ -27,9 +28,9 @@ function Map(){
                               categories
                             </a>
                             <ul className="dropdown-menu">
-                              <li><a className="dropdown-item" href="#categories">Fabrics</a></li>
-                              <li><a className="dropdown-item" href="#categories">Kuchu</a></li>
-                              <li><a className="dropdown-item" href="#categories">Threads,beads and laces</a></li>
+                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Fabrics</a></li>
+                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Kuchu</a></li>
+                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Threads,beads and laces</a></li>
                                
                             </ul>
                           </li>
@@ -53,10 +54,13 @@ function Map(){
                   </nav>
                 </div>
             </div>
-
-            <div className='row'>
+             <div className='row mt-2'>
+             <marquee className="text-danger">you can visit our store by using below Address and map location </marquee>
+             </div>
+            <div className='row '>
                 <div className='col-md-6'>
-                    <h1>location</h1>
+                    
+                    <img src={banner} alt='' style={{height:"100%" , width:"100%"}}></img>
                 </div>
                 <div className='col-md-6'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475.6108703239861!2d78.30181549999999!3d17.5129086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8d026c974857%3A0x8b5e28ec4bcb9330!2sKanyamani%20Fashions!5e0!3m2!1sen!2sin!4v1710311000862!5m2!1sen!2sin" width="100%" height="600" style={{border:"0px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='location'></iframe>

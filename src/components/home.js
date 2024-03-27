@@ -2,7 +2,7 @@ import logo from '../images/Logo Files/For Web/png/wl.png';
 import img from '../images/mainlogo.jpg';
 import "../css/footer.css";
 import "../css/card.css";
- 
+import avatar from '../images/avatar.png'
 import Aboutus from './Aboutus';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
@@ -35,10 +35,10 @@ function Home(){
                             <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul className="dropdown-menu">
-                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
-                              <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
-                              <li> <Link to={`/threads`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
+                            <ul className="dropdown-menu bg-dark  ">
+                              <li> <Link to={`/fabrics`}  className="dropdown-item text-light" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item text-light" >Kuchu </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item text-light" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>
@@ -204,19 +204,19 @@ function Home(){
              <div className='row mt-3' style={{margin:"0px",padding:"0px"}}>
                  
                   <h1 className='text-dark fw-bold text-center' > Reviews</h1>
-                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style={{backgroundColor:"#c39ea0"}}>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <div class="row">
-                            <div class='card col-md-6 col-sm-12'>
+                            <div class='card col-md-6 col-sm-12 px-5 ' style={{backgroundColor:"#c39ea0"}}>
                                
-                                <div class="card-header">
-                                  <div style={{float:"left"}}> 
-                                  <img src={fabrics} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                <div class="card-headder mx-3">
+                                  <div style={{float:"left"}} className='mt-2'> 
+                                  <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
                                   </div>
                                   <div style={{float:"left",paddingLeft:"30px"}}>
-                                    <h3>Jhon Doe</h3>
-                                    <h5>Rajhmundary</h5> 
+                                    <h3 className='mt-2'>Sushma Reddy</h3>
+                                    <h5>Hyderabad</h5> 
                                     <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
                                   </div>
                                    
@@ -226,13 +226,13 @@ function Home(){
                                 </div>
                           
                             </div>
-                            <div class='card col-md-6 col-sm-12'>
-                              <div class="card-header">
-                                    <div style={{float:"left"}}> 
-                                    <img src={fabrics} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                            <div class='card col-md-6 col-sm-12' style={{backgroundColor:"#c39ea0"}}>
+                              <div class="card-headder mx-3">
+                                    <div style={{float:"left"}} className='mt-2'> 
+                                    <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
                                     </div>
                                     <div style={{float:"left",paddingLeft:"30px"}}>
-                                      <h3>Jhon Doe</h3>
+                                      <h3 className='mt-2'>shirisha</h3>
                                       <h5>Rajhmundary</h5> 
                                       <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
                                     </div>
@@ -246,14 +246,14 @@ function Home(){
                         </div>
                         <div class="carousel-item">
                           <div class="row">
-                            <div class='card col-md-6 col-sm-12'>
-                            <div class="card-header">
-                                  <div style={{float:"left"}}> 
-                                  <img src={threads} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                            <div class='card col-md-6 col-sm-12' style={{backgroundColor:"#c39ea0"}}>
+                            <div class="card-headder mx-3">
+                                  <div style={{float:"left"}} className='mt-2'> 
+                                  <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
                                   </div>
                                   <div style={{float:"left",paddingLeft:"30px"}}>
-                                    <h3>Jhon Doe</h3>
-                                    <h5>Rajhmundary</h5> 
+                                    <h3 className='mt-2'>bhargavi</h3>
+                                    <h5>Hyderabad</h5> 
                                     <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
                                   </div>
                                    
@@ -262,14 +262,14 @@ function Home(){
                                 <p class="">"Good boutique for Blouse designs, Saree Ku chu, Maggam work. Good place to work."</p>
                                 </div>
                             </div>
-                            <div class='card col-md-6 col-sm-12'>
-                            <div class="card-header">
-                                  <div style={{float:"left"}}> 
-                                  <img src={threads} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                            <div class='card col-md-6 col-sm-12  ' style={{backgroundColor:"#c39ea0"}}>
+                            <div class="card-headder mx-3">
+                                  <div style={{float:"left"}} className='mt-2'> 
+                                  <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
                                   </div>
                                   <div style={{float:"left",paddingLeft:"30px"}}>
-                                    <h3>Jhon Doe</h3>
-                                    <h5>Rajhmundary</h5> 
+                                    <h3 className='mt-2'>sravya</h3>
+                                    <h5>Polavaram</h5> 
                                     <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
                                   </div>
                                    
