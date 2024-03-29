@@ -10,7 +10,7 @@ import kuchu from '../images/kuchu.jpg';
 import fabrics from '../images/fabrics.jpeg';
 import threads from '../images/threads.jpeg';
 import wa from '../images/whatsapp.png';
-import tag from '../images/10%.png';
+ 
  
 function Home(){
  
