@@ -34,10 +34,10 @@ function Kuchu(){
                             <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul className="dropdown-menu">
-                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
-                              <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
-                              <li> <Link to={`/threads`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
+                            <ul className="dropdown-menu bg-dark  ">
+                              <li> <Link to={`/fabrics`}  className="dropdown-item text-light" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item text-light" >Kuchu </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item text-light" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>
@@ -64,41 +64,48 @@ function Kuchu(){
             <div className='row text-center '>
                  
                     <h1 className='fw-bolder my-5'> Kuchu </h1>
-                    <div className='card col-md-3 col-sm-6 coll' >
+                    <div className='col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k1} alt=''  style={{height:'200px',width:'300px'}} /> 
+                            <img src={k1} alt=''  style={{height:'200px',width:'250px'}} /> 
                         </div>
                         <div className='card-body'> 
                             <h3>Design -1</h3>
                             <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
                        
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className='col-md-3 col-sm-6 '>
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k2} alt=''  style={{height:'200px',width:'300px'}}/> 
+                            <img src={k2} alt=''  style={{height:'200px',width:'250px'}}/> 
                         </div>
                         <div className='card-body'> 
                             <h3>Design -2</h3>
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp; &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
              
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className=' col-md-3 col-sm-6'>
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k3} alt='' style={{height:'200px',width:'300px'}} /> 
+                            <img src={k3} alt='' style={{height:'200px',width:'250px'}} /> 
                         </div>
                         <div className='card-body'> 
                             <h3> Design -3</h3>
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className=' col-md-3 col-sm-6'>
+                    <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k4} alt='' style={{height:'200px',width:'300px'}} /> 
+                            <img src={k4} alt='' style={{height:'200px',width:'250px'}} /> 
                             
                         </div>
                         <div className='card-body'> 
@@ -106,6 +113,7 @@ function Kuchu(){
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
                         
                     </div>
                      

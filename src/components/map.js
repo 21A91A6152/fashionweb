@@ -28,10 +28,10 @@ function Map(){
                             <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul className="dropdown-menu">
-                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Fabrics</a></li>
-                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Kuchu</a></li>
-                              <li><a className="dropdown-item" href="#categories bg-dark text-light">Threads,beads and laces</a></li>
+                            <ul className="dropdown-menu bg-dark  ">
+                              <li> <Link to={`/fabrics`}  className="dropdown-item text-light" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item text-light" >Kuchu </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item text-light" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>

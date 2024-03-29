@@ -4,10 +4,14 @@ import wa from '../images/whatsapp.png';
 import '../css/card.css';
 import Footer from './footer';
 import Aboutus from './Aboutus';
-import k1 from '../images/k1.jpg';
-import k2 from '../images/k2.jpg';
-import k3 from '../images/k3.jpg';
-import k4 from '../images/k4.jpg';
+import t1 from '../images/silkt.jpg';
+import t2 from '../images/cottont.jpg';
+import t3 from '../images/lacet.jpeg';
+import t4 from '../images/feviglue.jpg';
+import t5 from '../images/stonelace.jpeg';
+import t6 from '../images/zarit.jpeg';
+import t7 from '../images/seedbeeds.jpg';
+import t8 from '../images/Beads.jpg';
  
 
 
@@ -34,10 +38,10 @@ function Threads(){
                             <a className="nav-link dropdown-toggle fs-5 px-2" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               categories
                             </a>
-                            <ul className="dropdown-menu">
-                              <li> <Link to={`/fabrics`}  className="dropdown-item" >Fabrics </Link> </li>
-                              <li> <Link to={`/kuchu`}  className="dropdown-item" >Kuchu </Link> </li>
-                              <li> <Link to={`/threads`}  className="dropdown-item" >Threads ,beads and laces </Link> </li>
+                            <ul className="dropdown-menu bg-dark  ">
+                              <li> <Link to={`/fabrics`}  className="dropdown-item text-light" >Fabrics </Link> </li>
+                              <li> <Link to={`/kuchu`}  className="dropdown-item text-light" >Kuchu </Link> </li>
+                              <li> <Link to={`/threads`}  className="dropdown-item text-light" >Threads ,beads and laces </Link> </li>
                                
                             </ul>
                           </li>
@@ -64,41 +68,46 @@ function Threads(){
             <div className='row text-center '>
                  
                     <h1 className='fw-bolder my-5'> Threads,beads & laces </h1>
-                    <div className='card col-md-3 col-sm-6 coll' >
+                    <div className=' col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k1} alt=''  style={{height:'200px',width:'300px'}} /> 
+                            <img src={t1} alt=''  style={{height:'200px',width:'250px'}} /> 
                         </div>
                         <div className='card-body'> 
                             <h3>Design -1</h3>
                             <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
-                       
+                      </div>
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className='col-md-3 col-sm-6'>
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k2} alt=''  style={{height:'200px',width:'300px'}}/> 
+                            <img src={t2} alt=''  style={{height:'200px',width:'250px'}}/> 
                         </div>
                         <div className='card-body'> 
                             <h3>Design -2</h3>
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp; &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
-             
+                      </div>
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className='col-md-3 col-sm-6'>
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k3} alt='' style={{height:'200px',width:'300px'}} /> 
+                            <img src={t3} alt='' style={{height:'200px',width:'250px'}} /> 
                         </div>
                         <div className='card-body'> 
                             <h3> Design -3</h3>
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
                     </div>
-                    <div className='card col-md-3 col-sm-6 coll'>
+                    <div className='col-md-3 col-sm-6 '>
+                      <div className='card coll m-2'>
                         <div className='card-header'>
-                            <img src={k4} alt='' style={{height:'200px',width:'300px'}} /> 
+                            <img src={t4} alt='' style={{height:'200px',width:'250px'}} /> 
                             
                         </div>
                         <div className='card-body'> 
@@ -106,7 +115,56 @@ function Threads(){
                             <span className='fw-italic'><del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
                             <span className='fw-italic text-success'>save 10%</span>
                         </div>
+                      </div>
                         
+                    </div>
+                    <div className=' col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
+                        <div className='card-header'>
+                            <img src={t5} alt=''  style={{height:'200px',width:'250px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Design -1</h3>
+                            <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className=' col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
+                        <div className='card-header'>
+                            <img src={t6} alt=''  style={{height:'200px',width:'250px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Design -1</h3>
+                            <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className=' col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
+                        <div className='card-header'>
+                            <img src={t7} alt=''  style={{height:'200px',width:'250px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Design -1</h3>
+                            <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className=' col-md-3 col-sm-6' >
+                      <div className='card coll m-2'>
+                        <div className='card-header'>
+                            <img src={t8} alt=''  style={{height:'200px',width:'250px'}} /> 
+                        </div>
+                        <div className='card-body'> 
+                            <h3>Design -1</h3>
+                            <span className='fw-italic'> <del>  &#8377; 349</del> &nbsp;&nbsp;&nbsp;  &#8377;299</span> <br/>
+                            <span className='fw-italic text-success'>save 10%</span>
+                        </div>
+                      </div>
                     </div>
                      
                   

@@ -10,6 +10,7 @@ import kuchu from '../images/kuchu.jpg';
 import fabrics from '../images/fabrics.jpeg';
 import threads from '../images/threads.jpeg';
 import wa from '../images/whatsapp.png';
+import tag from '../images/10%.png';
  
 function Home(){
  
@@ -63,11 +64,12 @@ function Home(){
                 </div>
             </div>
             <div className="row " style={{margin:'0px' ,padding:'0px'}}>
-                <div className="col-12">
+                <div className="col-12" style={{margin:"0px",padding:"0px"}}>
                  <img src={img}  alt='logo' style={{width:"100%",height:"600px"}}></img>
                 </div>
+                 
             </div>
-  
+
 
             {/* categories */}
 
@@ -111,6 +113,7 @@ function Home(){
                     <Link to={`/threads`}> 
                       <div className='card my-4 coll' style={{backgroundColor:"#c39ea0"}}>
                         <div className='card-header text-center mt-3'>
+                           
                           <img src={threads} alt='threads' style={{height:'200px',width:"280px"}}></img>
                            </div>
                           <div className='card-body'>
@@ -126,6 +129,7 @@ function Home(){
               </div>
               <div className='col-md-1' style={{margin:'0px',padding:'0px'}}></div>
             </div>
+            
 
             {/* ABOUT US */}
 
@@ -204,29 +208,29 @@ function Home(){
              <div className='row mt-3' style={{margin:"0px",padding:"0px"}}>
                  
                   <h1 className='text-dark fw-bold text-center' > Reviews</h1>
-                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style={{backgroundColor:"#c39ea0"}}>
+                  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <div class="row">
-                            <div class='card col-md-6 col-sm-12 px-5 ' style={{backgroundColor:"#c39ea0"}}>
-                               
-                                <div class="card-headder mx-3">
-                                  <div style={{float:"left"}} className='mt-2'> 
-                                  <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                          <div className='col-md-1'></div>
+                          <div class='card col-md-5 col-sm-12 me-1' style={{borderRadius:"10px",backgroundColor:"#c39ea0"}}>
+                              <div class="card-headder mx-3">
+                                    <div style={{float:"left"}} className='mt-2'> 
+                                    <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
+                                    </div>
+                                    <div style={{float:"left",paddingLeft:"30px"}}>
+                                      <h3 className='mt-2'>Sushma Reddy</h3>
+                                      <h5>Rajhmundary</h5> 
+                                      <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                    </div>
+                                    
                                   </div>
-                                  <div style={{float:"left",paddingLeft:"30px"}}>
-                                    <h3 className='mt-2'>Sushma Reddy</h3>
-                                    <h5>Hyderabad</h5> 
-                                    <p class="pt-1"> <span class="social-block-rating"><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i><i class="fa-solid fa-star" style={{color: "#FFD43B"}}></i></span> </p>
+                                  <div className='card-body' style={{width:"100%"}}>
+                                  <p class="">"Customer service is very good fabrics quality is also good.satisfied with the work with very reasonable prices "</p>
                                   </div>
-                                   
-                                </div>
-                                <div className='card-body' style={{width:"100%"}}>
-                                <p class="">"Customer service is very good fabrics quality is also good.satisfied with the work with very reasonable prices " </p>
-                                </div>
-                          
-                            </div>
-                            <div class='card col-md-6 col-sm-12' style={{backgroundColor:"#c39ea0"}}>
+                              </div>
+                            
+                            <div class='card col-md-5 col-sm-12 pe-2' style={{borderRadius:"10px",backgroundColor:"#c39ea0"}}>
                               <div class="card-headder mx-3">
                                     <div style={{float:"left"}} className='mt-2'> 
                                     <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
@@ -243,10 +247,12 @@ function Home(){
                                   </div>
                               </div>
                           </div>
+                          <div className='col-md-1'></div>
                         </div>
                         <div class="carousel-item">
                           <div class="row">
-                            <div class='card col-md-6 col-sm-12' style={{backgroundColor:"#c39ea0"}}>
+                          <div className='col-md-1'></div>
+                            <div class='card col-md-5 col-sm-12 me-1' style={{borderRadius:"10px",backgroundColor:"#c39ea0"}}> 
                             <div class="card-headder mx-3">
                                   <div style={{float:"left"}} className='mt-2'> 
                                   <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
@@ -262,7 +268,7 @@ function Home(){
                                 <p class="">"Good boutique for Blouse designs, Saree Ku chu, Maggam work. Good place to work."</p>
                                 </div>
                             </div>
-                            <div class='card col-md-6 col-sm-12  ' style={{backgroundColor:"#c39ea0"}}>
+                            <div class='card col-md-5 col-sm-12' style={{borderRadius:"10px",backgroundColor:"#c39ea0"}}>
                             <div class="card-headder mx-3">
                                   <div style={{float:"left"}} className='mt-2'> 
                                   <img src={avatar} alt='kcm' style={{height:"100px",width:"150px"}}  />
@@ -279,11 +285,12 @@ function Home(){
                                 </div>
                             </div>
                           </div>
+                          <div className='col-md-1'></div>
                         </div>
                         
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style={{color:"black"}} aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
@@ -306,3 +313,7 @@ function Home(){
     )
 }
 export default Home;
+
+
+
+ 
